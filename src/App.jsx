@@ -1,5 +1,6 @@
 import HomePage from "./routes/homePage/homePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AboutPage from "./routes/aboutPage/aboutPage";
 import ListPage from "./routes/listPage/listPage";
 import { Layout, RequireAuth } from "./routes/layout/layout";
 import SinglePage from "./routes/singlePage/singlePage";
@@ -9,6 +10,7 @@ import Register from "./routes/register/register";
 import ProfileUpdatePage from "./routes/profileUpdatePage/profileUpdatePage";
 import NewPostPage from "./routes/newPostPage/newPostPage";
 import { listPageLoader, profilePageLoader, singlePageLoader } from "./lib/loaders";
+import ConsultantPage from "./routes/consultants/consultantPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -19,6 +21,14 @@ function App() {
         {
           path: "/",
           element: <HomePage />,
+        },
+        {
+          path: "/about",
+          element: <AboutPage />,
+        },
+        {
+          path: "/consultants",
+          element: <ConsultantPage />,
         },
         {
           path: "/list",

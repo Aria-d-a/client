@@ -21,8 +21,8 @@ function Navbar() {
           <span>Dream Home</span>
         </a>
         <a href="/">Главная</a>
-        <a href="/">Контакты</a>
-        <a href="/">Сотрудники</a>
+        <a href="/about">Контакты</a>
+        <a href="/consultants">Сотрудники</a>
       </div>
       <div className="right">
         {currentUser ? (
@@ -49,10 +49,10 @@ function Navbar() {
         </div>
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Главная</a>
-          <a href="/">Контакты</a>
-          <a href="/">Сотрудники</a>
-          <a href="/">Вход</a>
-          <a href="/">Регистрация</a>
+          <a href="/about">Контакты</a>
+          <a href="/consultants">Сотрудники</a>
+          <a href="/login">Вход</a>
+          <a href="/registration">Регистрация</a>
         </div>
       </div>
     </nav>
