@@ -15,7 +15,7 @@ function Map({ items }) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[52.4797, -1.90269]}>
+      <Marker position={[44.578273, 38.0799335]}>
         <Popup>
         </Popup>
       </Marker>
