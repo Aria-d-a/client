@@ -7,10 +7,10 @@ function Pin({ item }) {
     <Marker position={[item.latitude, item.longitude]}>
       <Popup>
         <div className="popupContainer">
-          <img src={item.images[0]} alt="" />
+          <img src={item.img} alt="" />
           <div className="textContainer">
             <Link to={`/${item.id}`}>{item.title}</Link>
-            <span>{item.bedroom} Ванная</span>
+            <span>{item.bedroom} Спальная</span>
             <b>{item.price} руб.</b>
           </div>
         </div>
