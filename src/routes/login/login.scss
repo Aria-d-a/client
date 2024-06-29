@@ -54,6 +54,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include md {
+      display: none;
+    }
+
     img {
       width: 140%;
     }
